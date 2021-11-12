@@ -1,7 +1,7 @@
 window.onload = function () {
 
   let button = document.querySelector("button");
-  let textdiv = document.getElementById("text-input");
+  let affirmation = document.getElementById("affirmation");
   const myArray = ["Asking for help is a sign of self-respect and self-awareness.", 
   "I am in charge of how I feel and I choose to feel happy.", 
   "I am optimistic because today is a new day.", 
@@ -17,6 +17,6 @@ window.onload = function () {
 
   function generateAffirmation(array) {
     let randomNum = Math.floor(Math.random() * array.length);
-    textdiv.innerHTML = array[randomNum];
+    affirmation.innerHTML = array[randomNum];
   }
 }

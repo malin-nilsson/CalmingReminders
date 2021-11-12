@@ -1,16 +1,16 @@
 body {
     padding: 0;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 12pt;
-    background-color: #dfdbe5;
-    background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23a28cc6' fill-opacity='0.4'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-image: url(../assets/wave-haikei.svg);
+    background-size: cover;
 }
 
 main {
     display: flex;
     flex-direction: column;
-    padding-top: 100px;
+    padding-top: 30px;
     text-align: center;
 }
 
@@ -24,7 +24,7 @@ main {
     margin: 0 auto;
     border-radius: 30px;
     background-color: #fff8f8;
-    box-shadow: -2px 5px 10px 2px #9684b1;
+    box-shadow: -1px 1px 8px 2px #200835;
 }
 
 #text-input {
@@ -32,14 +32,17 @@ main {
 }
 
 h1 {
-    font-family: 'Knewave', cursive;
+    font-family: 'Abril Fatface', cursive;
+    padding: 0px 200px;
+    text-align: center;
+    margin: 0;
 }
 
 button {
-    font-size: 1.3rem;
-    padding: 20px;
-    margin: 20px;
-    background-color: #9684b1;
+    font-size: 1rem;
+    padding: 19px 20px;
+    margin: 40px 5px;
+    background-color: #250340;
     color: white;
     border-radius: 50px;
     border: none;
@@ -51,6 +54,51 @@ button {
 button:hover {
     transform: translate(1px, -1px);
     cursor: pointer;
-    background-color: #dfd4f0;
+    background-color: #f6beb4;
     color: black;
+}
+
+#affirmation {
+    font-size: 1.7rem;
+    font-weight: 100;
+    margin: 10px 0px 0px;
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        padding-top: 20px;
+    }
+
+    .container {
+        width: 55%;
+        height: 80vh;
+        box-shadow: -1px 1px 7px #200835;
+    }
+
+    h1 {
+        padding: 40px 100px 20px;
+        font-size: 3rem;
+        line-height: 50px;
+
+    }
+
+    button {
+        font-size: 1.3rem;
+        padding: 20px;
+        margin: 70px 0px 50px;
+        color: white;
+        border-radius: 50px;
+        border: none;
+        transition: transform 250ms;
+        text-transform: uppercase;
+        box-shadow: -2px 5px 15px 2px #9684b1;
+    }
+
+    #affirmation {
+        font-size: 2.6rem;
+        height: 200px;
+        padding: 0px 30px;
+    }
+
+
 }
