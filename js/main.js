@@ -1,4 +1,4 @@
-const affirmations = ["Asking for help is a sign of self-respect and self-awareness.",
+const reminders = ["Asking for help is a sign of self-respect and self-awareness.",
   "I am in charge of how I feel and I choose to feel happy.",
   "I am optimistic because today is a new day.",
   "I breathe in trust, I exhale doubt.",
@@ -10,15 +10,14 @@ const affirmations = ["Asking for help is a sign of self-respect and self-awaren
   "I strive for joy, not for perfection.",
 ];
 
-
 window.onload = function () {
   let button = document.querySelector("button");
-  button.addEventListener("click", () => generateAffirmation(affirmations));
+  button.addEventListener("click", () => generateAffirmation(reminders));
 }
 
-function generateAffirmation(affirmation) {
-  let affirmationContainer = document.getElementById("affirmation");
-  affirmationContainer.style.display = "block";
-  let randomNum = Math.floor(Math.random() * affirmation.length);
-  affirmationContainer.innerHTML = affirmation[randomNum];
+function generateAffirmation(reminders) {
+  let reminderContainer = document.getElementById("reminder");
+  reminderContainer.style.display = "block";
+  let randomNum = Math.floor(Math.random() * reminders.length);
+  reminderContainer.innerHTML = reminders[randomNum];
 }
