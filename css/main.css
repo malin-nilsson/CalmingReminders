@@ -3,10 +3,15 @@ body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
   font-size: 12pt;
-  background-image: url(../assets/wave-haikei.svg);
+  background-image: linear-gradient(to top, rgba(169, 208, 113, 0), #88add7), url(../assets/hero-mobile.jpg);
   background-repeat: no-repeat;
   height: 100vh;
   background-size: cover;
+}
+@media screen and (min-width: 1100px) {
+  body {
+    background-image: none;
+  }
 }
 
 main {
@@ -18,66 +23,143 @@ main {
 video {
   display: none;
 }
-
-.text-container {
-  padding: 70px 20px;
+@media screen and (min-width: 1100px) {
+  video {
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    height: 100vh;
+    position: relative;
+    width: 100%;
+  }
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 65%;
-  padding: 40px;
-  margin: 0 auto;
-  border-radius: 30px;
-  background-color: #0f0e10;
-  color: #fff;
-  box-shadow: -1px 1px 8px 2px #200835;
+  position: relative;
 }
 
-#text-input {
+.text-container {
+  color: #fff;
+  padding-top: 100px;
+}
+@media screen and (min-width: 1100px) {
+  .text-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    padding-top: 100px;
+  }
+}
+
+.reminder-container {
+  display: none;
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.7);
+  height: auto;
+  border-radius: 30px;
+  margin: 0px 20px;
+  color: #000;
+  padding: 10px 40px 30px;
+}
+@media screen and (min-width: 768px) {
+  .reminder-container {
+    margin: 0px 50px;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .reminder-container {
+    display: none;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 400px;
+    height: auto;
+    border-radius: 30px;
+    margin: 0 auto;
+    color: #000;
+    padding: 10px 40px 30px;
+  }
+}
+.reminder-container .reminder-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.reminder-container .reminder-heading h2 {
+  font-weight: 700;
+  font-size: 1rem;
+}
+.reminder-container .reminder-heading .bi-bookmark-heart-fill {
   font-size: 1.5rem;
+}
+.reminder-container #reminder {
+  display: none;
+  font-size: 1.1rem;
+  height: auto;
+  color: #222222;
+  font-weight: 500;
+  text-align: left;
 }
 
 h1 {
   font-family: "Abril Fatface", cursive;
   text-align: center;
   margin: 0;
+  color: #000;
+}
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (min-width: 1100px) {
+  h1 {
+    font-size: 3rem;
+    line-height: 50px;
+    text-shadow: none;
+    color: #000;
+  }
 }
 
 button {
   position: relative;
-  background-color: black;
+  background-color: #fff;
   text-transform: uppercase;
-  border-radius: 4em;
+  border-radius: 30px;
   font-size: 16px;
-  color: white;
-  padding: 0.8em 1.8em;
+  color: #000;
+  padding: 12px 20px;
   cursor: pointer;
   user-select: none;
   text-align: center;
   text-decoration: none;
+  font-weight: 700;
   cursor: pointer;
-  margin: 30px 0px 50px;
+  margin: 50px 0px;
   border: none;
   transition-duration: 0.4s;
   -webkit-transition-duration: 0.4s;
   /* Safari */
 }
-
-button:hover {
-  transition-duration: 0.2s;
-  background-color: #e8e8e8;
-  color: #000;
+@media screen and (min-width: 1100px) {
+  button button {
+    background-color: #000;
+    color: #fff;
+  }
+  button button:hover {
+    transition-duration: 0.2s;
+    background-color: #ffffff;
+    color: #000;
+    border: 1px solid #000;
+  }
 }
 
 button:after {
   content: "";
   display: block;
   position: absolute;
-  border-radius: 3em;
+  border-radius: 30px;
   left: 0;
   top: 0;
   width: 100%;
@@ -90,7 +172,7 @@ button:after {
 button:active:after {
   box-shadow: #fff;
   position: absolute;
-  border-radius: 3em;
+  border-radius: 30px;
   left: 0;
   top: 0;
   opacity: 1;
@@ -102,58 +184,17 @@ button:active {
 }
 
 #reminder {
+  display: none;
   font-size: 1.7rem;
-  font-weight: 100;
+  font-weight: 300;
   margin: 10px 0px 0px;
 }
-
 @media screen and (min-width: 1100px) {
-  body {
-    background-image: none;
-  }
-
-  .container {
-    width: 55%;
-    height: 80vh;
-    box-shadow: -1px 1px 7px #200835;
-  }
-
-  h1 {
-    padding: 40px 100px 20px;
-    font-size: 3rem;
-    line-height: 50px;
-  }
-
-  .video-container {
-    position: relative;
-  }
-  .video-container video {
-    display: block;
-    object-fit: cover;
-    object-position: center;
-    height: 100vh;
-    position: relative;
-    width: 100%;
-  }
-  .video-container .text-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    text-align: center;
-    width: 100%;
-    padding-top: 100px;
-  }
-
   #reminder {
-    display: none;
-    font-size: 2.6rem;
+    font-size: 1.1rem;
     height: auto;
-    padding: 20px 35px;
     color: #222222;
-    font-weight: 700;
-    background-color: rgba(255, 255, 255, 0.7);
-    width: 600px;
-    border-radius: 100px;
-    margin: 0 auto;
+    font-weight: 500;
+    text-align: left;
   }
 }
