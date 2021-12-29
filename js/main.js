@@ -1,3 +1,4 @@
+// A list with all reminders
 const reminders = ["Asking for help is a sign of self-respect and self-awareness.",
   "I am in charge of how I feel and I choose to feel happy.",
   "I am optimistic because today is a new day.",
@@ -15,12 +16,14 @@ const reminders = ["Asking for help is a sign of self-respect and self-awareness
   "I am responsible for myself, and I start there.",
 ];
 
+// When the page has fully loaded, grab the button and add a click event to it
 window.onload = function () {
   let button = document.querySelector("button");
-  button.addEventListener("click", () => generateAffirmation(reminders));
+  button.addEventListener("click", () => generateReminder(reminders));
 }
 
-function generateAffirmation(reminders) {
+// Generate reminder when the button is clicked
+function generateReminder(reminders) {
   let reminderContainer = document.querySelector(".reminder-container");
   reminderContainer.style.display = "block";
   let reminder = document.getElementById("reminder");

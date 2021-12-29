@@ -1,6 +1,7 @@
 body {
   padding: 0;
   margin: 0;
+  font-size: 14px;
   font-family: "Montserrat", sans-serif;
   font-size: 12pt;
   background-image: linear-gradient(to top, rgba(169, 208, 113, 0), #88add7), url(../assets/hero-mobile.jpg);
@@ -37,13 +38,12 @@ video {
 .container {
   position: relative;
 }
-
-.text-container {
+.container .text-container {
   color: #fff;
   padding-top: 100px;
 }
 @media screen and (min-width: 1100px) {
-  .text-container {
+  .container .text-container {
     position: absolute;
     top: 0;
     left: 0;
@@ -52,8 +52,12 @@ video {
     padding-top: 100px;
   }
 }
-
-.reminder-container {
+.container .text-container .intro-text {
+  color: #000;
+  padding: 20px;
+  font-size: 1rem;
+}
+.container .reminder-container {
   display: none;
   text-align: left;
   background-color: rgba(255, 255, 255, 0.7);
@@ -64,36 +68,30 @@ video {
   padding: 10px 40px 30px;
 }
 @media screen and (min-width: 768px) {
-  .reminder-container {
-    margin: 0px 50px;
+  .container .reminder-container {
+    width: 60%;
+    margin: 0 auto;
   }
 }
 @media screen and (min-width: 1100px) {
-  .reminder-container {
-    display: none;
-    text-align: left;
-    background-color: rgba(255, 255, 255, 0.7);
-    width: 400px;
-    height: auto;
-    border-radius: 30px;
+  .container .reminder-container {
+    width: 30%;
     margin: 0 auto;
-    color: #000;
-    padding: 10px 40px 30px;
   }
 }
-.reminder-container .reminder-heading {
+.container .reminder-container .reminder-heading {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.reminder-container .reminder-heading h2 {
+.container .reminder-container .reminder-heading h2 {
   font-weight: 700;
   font-size: 1rem;
 }
-.reminder-container .reminder-heading .bi-bookmark-heart-fill {
+.container .reminder-container .reminder-heading .bi-bookmark-heart-fill {
   font-size: 1.5rem;
 }
-.reminder-container #reminder {
+.container .reminder-container #reminder {
   display: none;
   font-size: 1.1rem;
   height: auto;
@@ -101,28 +99,26 @@ video {
   font-weight: 500;
   text-align: left;
 }
-
-h1 {
+.container h1 {
   font-family: "Abril Fatface", cursive;
   text-align: center;
   margin: 0;
   color: #000;
 }
 @media screen and (min-width: 768px) {
-  h1 {
+  .container h1 {
     font-size: 2.5rem;
   }
 }
 @media screen and (min-width: 1100px) {
-  h1 {
+  .container h1 {
     font-size: 3rem;
     line-height: 50px;
     text-shadow: none;
     color: #000;
   }
 }
-
-button {
+.container button {
   position: relative;
   background-color: #fff;
   text-transform: uppercase;
@@ -136,18 +132,19 @@ button {
   text-decoration: none;
   font-weight: 700;
   cursor: pointer;
-  margin: 50px 0px;
   border: none;
+  margin: 10px 0px 40px;
   transition-duration: 0.4s;
   -webkit-transition-duration: 0.4s;
   /* Safari */
 }
 @media screen and (min-width: 1100px) {
-  button button {
+  .container button {
     background-color: #000;
     color: #fff;
+    margin: 10px 0px 50px;
   }
-  button button:hover {
+  .container button:hover {
     transition-duration: 0.2s;
     background-color: #ffffff;
     color: #000;
