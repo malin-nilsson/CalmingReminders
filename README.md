@@ -34,7 +34,7 @@ Calming reminders to help you relax 🌊
 - Mobile-first workflow
 
 ### What I learned
-
+I loved playing around with styling and SASS on this project. I also got to create a function that toggles between showing/hiding an element and generating a random item from an array.
 
 ### Continued development
 
