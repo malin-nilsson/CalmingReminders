@@ -5,6 +5,14 @@ const reminders = ["Asking for help is a sign of self-respect and self-awareness
   "I celebrate the good qualities in others and myself.",
   "I breathe in calmness and breathe out nervousness.",
   "I strive for joy, not for perfection.",
+  "I have everything I need to succeed.",
+  "My life is not a race or competition.",
+  "Sometimes the work is resting.",
+  "Today I celebrate that I am younger than I’m ever going to be.",
+  "Changing my mind is a strength, not a weakness.",
+  "When I forgive myself, I free myself.",
+  "I am more than my circumstances dictate.",
+  "I am responsible for myself, and I start there.",
 ];
 
 window.onload = function () {
