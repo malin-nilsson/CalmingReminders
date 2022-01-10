@@ -1,20 +1,6 @@
 # Calming Reminders
 Calming reminders to help you relax 🌊
 
-## Table of contents
-
-- [Overview](#overview)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-
-## Overview
-
 ### Screenshot
 
 ![](assets/screenshot.jpg)
@@ -33,13 +19,7 @@ Calming reminders to help you relax 🌊
 - Mobile-first workflow
 
 ### What I learned
-I loved playing around with styling and SASS on this project. I learned more about creating hero videos for desktop and hero images for mobile and tablet. I also got to practice JavaScript and created a function that toggles between showing/hiding an element and generating a random item from an array.
-
-### Continued development
-
-
-### Useful resources
-
+I loved playing around with styling and SASS on this project. I learned more about creating hero videos for desktop and hero images for mobile and tablet. I also got to practice a bit of JavaScript and created a function that toggles between showing/hiding an element and generating a random item from an array.
 
 ## Author
 
