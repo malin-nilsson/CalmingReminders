@@ -42,7 +42,11 @@ video {
 
     .text-container {
         color: #fff;
-        padding-top: 100px;
+        padding-top: 70px;
+
+        @include mixins.tablet-only {
+            padding-top: 70px;
+        }
 
         @include mixins.desktop-only {
             position: absolute;
@@ -71,7 +75,7 @@ video {
         padding: 10px 40px 30px;
 
         @include mixins.tablet-only {
-            width: 60%;
+            width: 50%;
             margin: 0 auto;
         }
 
