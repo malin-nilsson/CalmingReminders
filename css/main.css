@@ -21,20 +21,6 @@ main {
   text-align: center;
 }
 
-video {
-  display: none;
-}
-@media screen and (min-width: 1100px) {
-  video {
-    display: block;
-    object-fit: cover;
-    object-position: center;
-    height: 100vh;
-    position: relative;
-    width: 100%;
-  }
-}
-
 .container {
   position: relative;
 }
@@ -61,6 +47,19 @@ video {
   color: #000;
   padding: 20px;
   font-size: 1rem;
+}
+.container video {
+  display: none;
+}
+@media screen and (min-width: 1100px) {
+  .container video {
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    height: 100vh;
+    position: relative;
+    width: 100%;
+  }
 }
 .container .reminder-container {
   display: none;
@@ -96,13 +95,20 @@ video {
 .container .reminder-container .reminder-heading .bi-bookmark-heart-fill {
   font-size: 1.5rem;
 }
-.container .reminder-container #reminder {
+.container #reminder {
   display: none;
   font-size: 1.1rem;
+  font-weight: 300;
+  margin: 10px 0px 0px;
   height: auto;
   color: #222222;
   font-weight: 500;
   text-align: left;
+}
+@media screen and (min-width: 1100px) {
+  .container #reminder {
+    color: #222222;
+  }
 }
 .container h1 {
   font-family: "Abril Fatface", cursive;
@@ -183,20 +189,4 @@ button:active:after {
 
 button:active {
   top: 1px;
-}
-
-#reminder {
-  display: none;
-  font-size: 1.7rem;
-  font-weight: 300;
-  margin: 10px 0px 0px;
-}
-@media screen and (min-width: 1100px) {
-  #reminder {
-    font-size: 1.1rem;
-    height: auto;
-    color: #222222;
-    font-weight: 500;
-    text-align: left;
-  }
 }

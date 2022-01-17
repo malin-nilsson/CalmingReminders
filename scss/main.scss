@@ -23,18 +23,7 @@ main {
     text-align: center;
 }
 
-video {
-    display: none;
-
-    @include mixins.desktop-only {
-        display: block;
-        object-fit: cover;
-        object-position: center;
-        height: 100vh;
-        position: relative;
-        width: 100%;
-    }
-}
+// Container styling
 
 .container {
     position: relative;
@@ -64,6 +53,21 @@ video {
         }
     }
 
+    // Hero video styling
+    video {
+        display: none;
+
+        @include mixins.desktop-only {
+            display: block;
+            object-fit: cover;
+            object-position: center;
+            height: 100vh;
+            position: relative;
+            width: 100%;
+        }
+    }
+
+    // Reminder styling
     .reminder-container {
         display: none;
         text-align: left;
@@ -101,18 +105,21 @@ video {
 
         }
 
+    }
 
-
-        #reminder {
-            display: none;
-            font-size: 1.1rem;
-            height: auto;
+    #reminder {
+        display: none;
+        font-size: 1.1rem;
+        font-weight: 300;
+        margin: 10px 0px 0px;
+        height: auto;
+        color: rgb(34, 34, 34);
+        font-weight: 500;
+        text-align: left;
+    
+        @include mixins.desktop-only {
             color: rgb(34, 34, 34);
-            font-weight: 500;
-            text-align: left;
-
         }
-
     }
 
     h1 {
@@ -198,17 +205,3 @@ button:active {
 }
 
 
-#reminder {
-    display: none;
-    font-size: 1.7rem;
-    font-weight: 300;
-    margin: 10px 0px 0px;
-
-    @include mixins.desktop-only {
-        font-size: 1.1rem;
-        height: auto;
-        color: rgb(34, 34, 34);
-        font-weight: 500;
-        text-align: left;
-    }
-}
