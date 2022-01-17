@@ -7,7 +7,7 @@ Calming reminders to help you relax 🌊
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://live-site-url.com)
+- Live Site URL: https://calmingreminders.netlify.app/
 
 ### Built with
 
