@@ -1,5 +1,6 @@
 # Calming Reminders
-Calming reminders to help you relax 🌊
+A web app built with JavaScript and SASS that generates a random calming reminder to help you relax 🌊
+
 
 ### Screenshot
 
@@ -19,7 +20,7 @@ Calming reminders to help you relax 🌊
 - Mobile-first workflow
 
 ### What I learned
-I loved playing around with styling and SASS on this project. I learned more about creating hero videos for desktop and hero images for mobile and tablet. I also got to practice a bit of JavaScript and created a function that toggles between showing/hiding an element and generating a random item from an array.
+I loved playing around with styling on this project. I learned more about creating hero videos/hero images and also got to practice a bit of JavaScript creating a function that toggles between showing/hiding an element and generating a random item from an array.
 
 ## Author
 
